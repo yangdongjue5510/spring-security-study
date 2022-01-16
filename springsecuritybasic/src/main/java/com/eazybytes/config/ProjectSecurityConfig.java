@@ -58,10 +58,10 @@ public class ProjectSecurityConfig  extends WebSecurityConfigurerAdapter {
 	// }
 
 	//UserDetailsService의 구현체로 jdbc를 사용할 것임을 알림
-	@Bean
-	public UserDetailsService userDetailsService(DataSource datasource) {
-		return new JdbcUserDetailsManager(datasource);
-	}
+	// @Bean
+	// public UserDetailsService userDetailsService(DataSource datasource) {
+	// 	return new JdbcUserDetailsManager(datasource);
+	// }
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return NoOpPasswordEncoder.getInstance();
